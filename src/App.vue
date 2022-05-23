@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          RoadToWeb3 - NFT Gallery
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
