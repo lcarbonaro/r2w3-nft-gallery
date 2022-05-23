@@ -1,0 +1,21 @@
+{
+  "name": "r2w3-nft-gallery",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview --port 5050"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "pinia": "^2.0.13",
+    "quasar": "^2.0.0",
+    "vue": "^3.2.33",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "vite": "^2.9.5",
+    "vue-cli-plugin-quasar": "~5.0.1"
+  }
+}
