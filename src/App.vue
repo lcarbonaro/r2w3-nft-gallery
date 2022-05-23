@@ -1,32 +1,31 @@
 <template>
   <q-layout view="hHh Lpr lFf">
-    <q-header elevated class="glossy">
-      <q-toolbar>
+    <q-header style="background-color: #333;" >
+      <q-toolbar >
         <q-btn
           flat
           dense
           round
           @click="leftDrawerOpen = !leftDrawerOpen"
           aria-label="Menu"
-          icon="menu"
+          icon="menu" 
+          class="btn-gradient"        
         />
 
-        <q-toolbar-title>
-          RoadToWeb3 - NFT Gallery
+        <q-toolbar-title >
+          <span class="text-gradient">RoadToWeb3 - NFT Gallery</span>          
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div></div>
       </q-toolbar>
     </q-header>
 
     <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-     
+      v-model="leftDrawerOpen"      
+      bordered    
     >
       <q-list>
-        <q-item-label header>Essential Links</q-item-label>
+        <q-item-label header>Menu</q-item-label>
         <q-item clickable  href="/">
           <q-item-section avatar>
             <q-icon name="home" />
@@ -51,20 +50,20 @@
     </q-drawer>
 
     <q-page-container>
-      <HelloWorld />
+      <router-view></router-view>
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
 import { ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'LayoutDefault',
 
   components: {
-    HelloWorld
+   
   },
 
   setup () {
@@ -74,3 +73,29 @@ export default {
   }
 }
 </script>
+
+<style>
+
+.text-gradient {
+  background: linear-gradient(to right, #30d08d, #c43ad6) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+
+.btn-gradient {
+  background-image: linear-gradient(to right, #30d08d, #c43ad6) !important; 
+  color: white !important;
+ 
+}
+
+.btn-gradient-sm {
+  background-image: linear-gradient(to right, #30d08d, #c43ad6);
+  border: 0;
+  color: white;  
+  padding: 5px;  
+  margin-top:15px;
+}
+
+
+</style>

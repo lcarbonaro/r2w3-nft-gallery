@@ -1,9 +1,11 @@
-<script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
-</script>
+
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+   <q-page class="flex flex-center">
+    HOME
+  </q-page>
 </template>
+
+<script setup>
+
+</script>
