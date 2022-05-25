@@ -31,7 +31,12 @@
       </div>
 
       <div id="divRight" class="col-6" style="margin-left:25px;">
-        RESULTS
+      
+        <div class="q-pa-md row items-start q-gutter-md">
+
+          <TheCard v-for="card in cards" :title="card.title" :subtitle="card.subtitle" :image="card.image" :key="card.id" />
+                    
+        </div>
 
       </div>
 
@@ -43,6 +48,41 @@
 
 <script setup>
 import { ref } from 'vue';
+
+import TheCard from './TheCard.vue'
+
+const cards = ref([
+  {
+    id: 1,
+    title:"Title1",
+    subtitle:"SubTitle1",
+    image: "https://cdn.quasar.dev/img/mountains.jpg"
+  },
+  {
+    id: 2,
+    title:"Title2",
+    subtitle:"SubTitle2",
+    image: "https://cdn.quasar.dev/img/parallax2.jpg"
+  },
+  {
+    id: 3,
+    title:"Title",
+    subtitle:"SubTitle",
+    image: "https://thecatapi.com/api/images/get?format=src&type=gif"
+  },
+  {
+    id: 4,
+    title:"Title",
+    subtitle:"SubTitle",
+    image: "https://picsum.photos/250?1234"
+  },
+  {
+    id: 5,
+    title:"Title",
+    subtitle:"SubTitle",
+    image: "https://picsum.photos/250?3456"
+  },  
+]);
 
 const chkCollection = ref(false);
 const inpWalletAddr = ref('');
