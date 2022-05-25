@@ -13,3 +13,30 @@ export default {
     Notify,
   }
 }
+
+
+/*
+
+examples for Loading , Notify
+
+$q.loading.show();
+        
+$q.notify({
+    type:'negative',
+    color:'red',               
+    message: "Invalid log-in credentials!",
+});            
+
+$q.notify({
+  type:'negative',         
+  color:'red',                     
+  message: "Not authorised to access this page!",
+});
+
+$q.notify({                  
+  message: `Logged in `,
+});
+        
+$q.loading.hide();
+        
+*/
