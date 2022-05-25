@@ -74,7 +74,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .text-gradient {
   background: linear-gradient(to right, #30d08d, #c43ad6) !important;
