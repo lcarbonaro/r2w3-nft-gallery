@@ -49,7 +49,7 @@
 <script setup>
 import { ref } from 'vue';
 
-import TheCard from './TheCard.vue'
+import TheCard from '../components/TheCard.vue'
 
 const cards = ref([
   {
