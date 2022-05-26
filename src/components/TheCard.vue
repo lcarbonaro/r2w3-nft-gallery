@@ -4,11 +4,11 @@
 
       <q-card-section>
         <div class="text-h6">{{title}}</div>
-        <div class="text-subtitle2">{{subtitle}}</div>
+        <!-- <div class="text-subtitle2">{{id}}</div> -->
       </q-card-section>
 
       <q-card-section class="q-pt-none">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ullam?
+        {{description}}
       </q-card-section>
     </q-card>
 
@@ -16,9 +16,11 @@
 
 <script setup>
 defineProps({
+  image: String,
   title: String,
-  subtitle: String,
-  image: String
+  id: String,  
+  address: String,
+  description: String,
 })
 
 </script>
@@ -27,6 +29,6 @@ defineProps({
 <style scoped>
 .my-card {
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
 }
 </style>
