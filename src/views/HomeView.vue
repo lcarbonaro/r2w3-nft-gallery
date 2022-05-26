@@ -109,7 +109,7 @@ async function getNFTs() {
   let fetchURL;
    
   if (inpCollectionAddr.value.length) {
-    fetchURL = `${baseURL}?owner=${inpWalletAddr}&contractAddresses%5B%5D=${inpCollectionAddr.value}`;    
+    fetchURL = `${baseURL}?owner=${inpWalletAddr.value}&contractAddresses%5B%5D=${inpCollectionAddr.value}`;    
   } else {   
     fetchURL = `${baseURL}?owner=${inpWalletAddr.value}`;        
   }
